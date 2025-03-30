@@ -56,6 +56,36 @@ class MainActivity : ComponentActivity() {
 
             Text(text = "Carlos Rodríguez", fontSize = 40f.sp)
 
+            Spacer(modifier = Modifier.height(16.dp))
+
+            Text(
+                text = "Ingeniero Informático",
+                fontSize = 30f.sp,
+                color = MaterialTheme.colorScheme.primary
+            )
+
+
+            Spacer(modifier = Modifier.height(150.dp))
+            // Número telefonico
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
+            ){
+                Image(
+                    painter = painterResource(id = R.drawable.telefono),
+                    contentDescription = "telefono",
+                    modifier = Modifier.size(35.dp)
+                )
+                Spacer(modifier = Modifier.width(16.dp))
+
+                Text(
+                    text = "+51 999 888 777",
+                    modifier = Modifier.wrapContentWidth(),
+                    fontSize = 25f.sp,
+                    maxLines = 1
+                )
+            }
 
         }
     }
