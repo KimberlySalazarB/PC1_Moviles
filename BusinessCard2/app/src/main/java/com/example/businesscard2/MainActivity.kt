@@ -86,7 +86,49 @@ class MainActivity : ComponentActivity() {
                     maxLines = 1
                 )
             }
+            Spacer(modifier = Modifier.height(16.dp))
+            //Red social
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
+            ){
+                Image(
+                    painter = painterResource(id = R.drawable.instagram),
+                    contentDescription = "redes sociales",
+                    modifier = Modifier.size(37.dp)
+                )
+                Spacer(modifier = Modifier.width(16.dp))
 
+                Text(
+                    text = "@Carlito_Rodri_o",
+                    modifier = Modifier.wrapContentWidth(),
+                    fontSize = 25f.sp,
+                    maxLines = 1
+                )
+            }
+
+            Spacer(modifier = Modifier.height(16.dp))
+            //Correo electronico
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.Center,
+                verticalAlignment = Alignment.CenterVertically
+            ){
+                Image(
+                    painter = painterResource(id = R.drawable.gmail),
+                    contentDescription = "correo",
+                    modifier = Modifier.size(35.dp)
+                )
+                Spacer(modifier = Modifier.width(16.dp))
+
+                Text(
+                    text = "rodri@gmail.com",
+                    modifier = Modifier.wrapContentWidth(),
+                    fontSize = 25f.sp,
+                    maxLines = 1
+                )
+            }
         }
     }
 
